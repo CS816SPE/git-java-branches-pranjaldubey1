@@ -11,6 +11,7 @@ public class cal
 		{
 			System.out.println("1. Add 2 Numbers \n");
 			System.out.println("2. Mutliply 2 Numbers \n");
+			System.out.println("4. Divide 2 Numbers \n");
 			System.out.println("3. Exit \n\n");
 			System.out.println("Enter Your Choice: ");
 			choice = scan.next().charAt(0);
@@ -31,6 +32,13 @@ public class cal
 							break;
 
 				case '3' :	System.exit(0);
+							break;
+							
+				case '4' :	System.out.println("Enter 2 Numbers: ");
+							a = scan.nextFloat();
+							b = scan.nextFloat();
+							res = a / b;
+							System.out.println("Result = " + res);
 							break;
 
 				default  :	System.out.println("Invalid Choice!!!");
